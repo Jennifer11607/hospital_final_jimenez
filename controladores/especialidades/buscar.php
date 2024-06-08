@@ -2,6 +2,9 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+
+
 require '../../modelos/Especialidades.php';
 try {
     $especialidad = new Especialidad($_GET);
@@ -31,6 +34,7 @@ try {
                         <tr>
                             <th>NO. </th>
                             <th>ESPECIALIDAD</th>
+                            <th>MODIFICAR</th>
                             <th>ELIMINAR</th>
                         </tr>
                     </thead>
@@ -39,13 +43,15 @@ try {
                         <?php foreach($especialidades as $key => $especialidad) : ?>
                         <tr>
                             <td><?= $key + 1 ?></td>
-                            <td><?= $especialidad['ESPEC_NOMBRE'] ?></td>
+                            <td><?= $especialidad['espec_nombre'] ?></td>
+                          
+                            <td><a class="btn btn-warning w-100" href="/hospital_final_jimenez/vistas/especialidades/modificar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Modificar</a></td>
                             <td><a class="btn btn-danger w-100" href="/hospital_final_jimenez/controladores/especialidades/eliminar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Eliminar</a></td>
                         </tr>
                         <?php endforeach ?>
                         <?php else :?>
                             <tr>
-                                <td colspan="3">NO EXISTEN REGISTROS</td>
+                                <td colspan="3">NO HAY REGISTROS</td>
                             </tr>
                         <?php endif?>
                     </tbody>
