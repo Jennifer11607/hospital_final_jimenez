@@ -22,22 +22,9 @@ require '../../modelos/Especialidad.php';
                 <input type="hidden" name="medico_id">
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="paciente_nombre">Nombre del Paciente</label>
+                        <label for="paciente_nombre">Nombre de la Especialidad</label>
                         <input type="text" name="paciente_nombre" id="paciente_nombre" class="form-control" required>
                     </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <label for="paciente_dpi">No. de DPI</label>
-                        <input type="text" name="paciente_dpi" id="paciente_dpi" class="form-control" required>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <label for="paciente_telefono">No. de telefono</label>
-                        <input type="text" name="paciente_telefono" id="paciente_telefono" class="form-control" required>
-                    </div>
-                </div>
                 <div class="row mb-3">
                     <div class="col">
                         <button type="submit" class="btn btn-warning w-100">Modificar</button>

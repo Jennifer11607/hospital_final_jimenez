@@ -12,7 +12,7 @@ include_once '../../includes/header.php'?>
             <form action="/hospital_final_jimenez/controladores/especialidades/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="espec_nombre">Especialidad</label>
+                        <label for="espec_nombre">Nombre de la Especialidad</label>
                         <input type="text" name="espec_nombre" id="espec_nombre" class="form-control">
                     </div>
                 </div>
