@@ -6,6 +6,7 @@
 
 <?php include_once '../../includes/header.php'?>
 <?php include_once '../../includes/navbar.php'?>
+
     <div class="container">
         <h1 class="text-center">FORMULARIO INGRESAR PACIENTES</h1>
         <div class="row justify-content-center">
