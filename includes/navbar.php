@@ -7,13 +7,13 @@
             <a class="navbar-brand" href="#">HOSPITAL ESPERANZA</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Jennifer</a>
+                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Citas
                     </a>
-                    <ul class="dropdown-menu bg-dark">
+                    <ul class="dropdown-menu bg-warning">
                         <li class="nav-item">
                             <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/index.php">Ingresar Citas</a>
                         </li>
