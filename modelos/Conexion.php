@@ -10,7 +10,7 @@ abstract class Conexion{
             self::$conexion = new PDO('informix:host=host.docker.internal; service=9088; database=hospital_final_jimenez; server=informix; protocol=onsoctcp;EnableScrollableCursors = 1','informix','in4mix'); 
             // DEFINIR EL MANEJO DE EXCEPCIONES
             self::$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "CONEXION EXITOSA";
+            //echo "CONEXION EXITOSA";
         }catch(PDOException $e){
             // IMPRIME EN PANTALLA EL ERROR
             echo "Error de conexion en la Base de Datos";

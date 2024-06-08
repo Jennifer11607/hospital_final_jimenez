@@ -5,7 +5,10 @@
 
 require '../../modelos/Paciente.php';
 
-
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
 
 $resultado = ""; 
 
@@ -70,7 +73,7 @@ try {
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/final_franco/vistas/pacientes/buscar.php" class="btn btn-info w-100">Volver a la busqueda</a>
+                <a href="/hospital_final_jimenez/vistas/pacientes/buscar.php" class="btn btn-info w-100">Volver a la busqueda</a>
             </div>
         </div>
     </div>
