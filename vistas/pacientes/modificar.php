@@ -2,6 +2,8 @@
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);?>
+
+
 <?php
 require '../../modelos/Paciente.php';
 try {
@@ -17,9 +19,11 @@ try {
         $error = $e2->getMessage();
     }
 ?>
+
+
 <?php include_once '../../includes/header.php'?>
     <div class="container">
-        <h1 class="text-center">Modificar Pacientes</h1>
+        <h1 class="text-center">MODIFICAR PACIENTES</h1>
         <div class="row justify-content-center">
             <form action="/hospital_final_jimenez/controladores/pacientes/modificar.php" method="POST" class="col-lg-8 border bg-light p-3">
             <input type="hidden" name="paciente_id" value="<?= $pacientes[0]['PACIENTE_ID']?>">
