@@ -6,7 +6,7 @@ require '../../modelos/Especialidad.php';
     try {
         $especialidad = new Especialidad($_GET);
 
-        $pacientes = $paciente->buscar();
+        $especialidad = $especialidad->buscar();
        
     } catch (PDOException $e) {
         $error = $e->getMessage();
