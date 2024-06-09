@@ -36,7 +36,7 @@ $_POST['cita_fecha']= date('d/m/Y', strtotime($_POST['cita_fecha']));
     <title>Guardar citas</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5 text-center bg-success ml-5">
         <div class="row">
             <div class="col-lg-6">
                 <?php if($resultado): ?>
@@ -52,7 +52,7 @@ $_POST['cita_fecha']= date('d/m/Y', strtotime($_POST['cita_fecha']));
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/vistas/citas/index.php" class="btn btn-info">Regresar al formulario</a>
+                <a href="/hospital_final_jimenez/vistas/citas/index.php" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
     </div>
