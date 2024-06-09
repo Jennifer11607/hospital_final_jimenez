@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-secondary">
+<nav class="navbar navbar-expand-lg " style="background-color: #1ABC9C;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -7,7 +7,7 @@
                 <a class="navbar-brand" href="#"><i class="bi bi-hospital"></i>  HOSPITAL ESPERANZA</a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                        <a class="nav-link active" aria-current="page" href="/hospital_final_jimenez/zulu/inicio.php">INICIO</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

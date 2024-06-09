@@ -1,17 +1,23 @@
+
+
+<?php 
+
+include_once '../../includes/navbar.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALAXY EMPIRE</title>
+    <title>HOSPITAL ESPERANZA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/primera.css">
     <!-- enlace boton waze -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- css boostrap -->
@@ -20,6 +26,62 @@
 </head>
 
 <style>
+
+/* css navbar */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 17px;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+}
+
+.navbar .navbar-brand:hover, .navbar .nav-link:hover {
+    color: #ffc107; /* Color de hover */
+}
+
+.navbar .dropdown-menu {
+    min-width: 200px; /* Ajusta esto según tus necesidades */
+}
+
+.navbar .dropdown-menu .nav-link {
+    color: white;
+}
+
+.navbar .dropdown-menu .nav-link:hover {
+    background-color: #2471A3; /* Color de fondo de hover */
+}
+
+.navbar .dropdown-menu.bg-dark .nav-link {
+    color: white;
+}
+
+.navbar .dropdown-menu.bg-dark .nav-link:hover {
+    background-color: #343a40; /* Color de fondo de hover */
+}
+
+.navbar .dropdown-menu.bg-warning .nav-link {
+    color: black;
+}
+
+.navbar .dropdown-menu.bg-warning .nav-link:hover {
+    background-color: #ffc107; /* Color de fondo de hover */
+}
+
+
+
+
 /* css carrousel */
 .carousel-caption {
     background-color: rgba(28, 79, 120, 0.517); /* Color de fondo transparente */
@@ -30,7 +92,6 @@
     position: absolute; /* Posicionamiento absoluto */
     
     transform: translateY(-140%); /* Centrar verticalmente */
- 
    
     
 }
@@ -103,6 +164,93 @@
 
 
 <body>
+
+<!-- inicio navbar -->
+<nav class="navbar navbar-expand-lg " style="background-color: #1ABC9C;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"><i class="bi bi-hospital"></i>  HOSPITAL ESPERANZA</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/hospital_final_jimenez/zulu/inicio.php">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PACIENTES
+                        </a>
+                        <ul class="dropdown-menu bg-success">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/pacientes/index.php"><i class="bi bi-pencil-fill"></i>  Ingresar Paciente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/pacientes/buscar.php"><i class="bi bi-search"></i>  Buscar Paciente</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ESPECIALIDADES
+                        </a>
+                        <ul class="dropdown-menu bg-success">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/especialidades/index.php"><i class="bi bi-pencil-fill"></i>  Ingresar especialidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/especialidades/buscar.php"><i class="bi bi-search"></i> Buscar especialidad</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           CLINICAS
+                        </a>
+                        <ul class="dropdown-menu bg-success">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/clinicas/index.php"><i class="bi bi-pencil-fill"></i>  Ingresar clinica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/clinicas/buscar.php"><i class="bi bi-search"></i> Buscar clinica</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            MEDICOS
+                        </a>
+                        <ul class="dropdown-menu bg-success">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/medicos/index.php"><i class="bi bi-pencil-fill"></i>  Ingresar Medico</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/medicos/buscar.php"><i class="bi bi-search"></i>  Buscar Medico</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CITAS
+                        </a>
+                        <ul class="dropdown-menu bg-success">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/index.php"><i class="bi bi-pencil-fill"></i>  Ingresar Citas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/buscar.php"><i class="bi bi-search"></i>  Buscar Citas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/detalle.php"><i class="bi bi-cloud-download"></i>  Imprimir Citas</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- finaliza navbar -->
   
     <!-- carrousel inicio -->
     <div class="container-fluid p-0 mb-5">
@@ -137,7 +285,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-primary font-weight-medium m-0">Nos ponemos a tu disposicion</h2>
                         <h1 class="display-1 text-white m-0">Todo en</h1>
-                        <h2 class="text-white m-0">* Informatica *</h2>
+                        <h2 class="text-white m-0">* Medicina *</h2>
                     </div>
                 </div>
             </div>
@@ -155,13 +303,13 @@
 
 
     <!-- inicia footer -->
-    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <div class="container-fluid footer text-white mt-5  px-0 position-relative overlay-top">
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contacto</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>3ra Avenida Zona 10 , Ciudad de Guatemala</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+502 345 67890</p>
-                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>32 calle 23-53 zona 5 , Ciudad de Guatemala</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+502 11223344</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>hospitalesperanza@example.com</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Siguenos en</h4>
@@ -210,9 +358,9 @@
         </div>
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
             style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Abril &copy; <a class="font-weight-bold" href="#">Jennifer</a>. Derechos
+            <p class="mb-2 text-white">Junio &copy; <a class="font-weight-bold" href="#">Jennifer</a>. Derechos
                 Reservados.</a></p>
-            <p class="m-0 text-white">EMIC <a class="font-weight-bold" href="https://htmlcodex.com">HTML
+            <p class="m-0 text-white">EMIC <a class="font-weight-bold" href="https://htmlcodex.com">INGENIERIA SOWTFARE
                     Guatemala</a></p>
         </div>
     </div>

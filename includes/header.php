@@ -24,11 +24,13 @@
     left: auto;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    font-size: 17px;
 }
 
 .navbar .navbar-brand, .navbar .nav-link {
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
 }
 
 .navbar .navbar-brand:hover, .navbar .nav-link:hover {
