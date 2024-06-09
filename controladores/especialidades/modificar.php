@@ -49,7 +49,7 @@ if (isset($_POST['espec_nombre']) && isset($_POST['espec_id'])) {
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/vistas/clinicas/buscar.php" class="btn btn-info">Regresar al formulario</a>
+                <a href="/hospital_final_jimenez/vistas/especialidades/buscar.php" class="btn btn-info">Regresar al formulario</a>
             </div>
         </div>
     </div>

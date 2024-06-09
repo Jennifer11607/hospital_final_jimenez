@@ -43,7 +43,7 @@ try {
                         <?php foreach($especialidades as $key => $especialidad) : ?>
                         <tr>
                             <td><?= $key + 1 ?></td>
-                            <td><?= $especialidad['espec_nombre'] ?></td>
+                            <td><?= $especialidad['ESPEC_NOMBRE'] ?></td>
                           
                             <td><a class="btn btn-warning w-100" href="/hospital_final_jimenez/vistas/especialidades/modificar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Modificar</a></td>
                             <td><a class="btn btn-danger w-100" href="/hospital_final_jimenez/controladores/especialidades/eliminar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Eliminar</a></td>
