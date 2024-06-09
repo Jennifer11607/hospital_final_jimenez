@@ -2,9 +2,6 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
-
-
 require '../../modelos/Especialidades.php';
 try {
     $especialidad = new Especialidad($_GET);
@@ -34,7 +31,6 @@ try {
                         <tr>
                             <th>NO. </th>
                             <th>ESPECIALIDAD</th>
-                            <th>MODIFICAR</th>
                             <th>ELIMINAR</th>
                         </tr>
                     </thead>
@@ -44,14 +40,12 @@ try {
                         <tr>
                             <td><?= $key + 1 ?></td>
                             <td><?= $especialidad['ESPEC_NOMBRE'] ?></td>
-                          
-                            <td><a class="btn btn-warning w-100" href="/hospital_final_jimenez/vistas/especialidades/modificar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Modificar</a></td>
                             <td><a class="btn btn-danger w-100" href="/hospital_final_jimenez/controladores/especialidades/eliminar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Eliminar</a></td>
                         </tr>
                         <?php endforeach ?>
                         <?php else :?>
                             <tr>
-                                <td colspan="3">NO HAY REGISTROS</td>
+                                <td colspan="3">NO EXISTEN REGISTROS</td>
                             </tr>
                         <?php endif?>
                     </tbody>
@@ -60,7 +54,7 @@ try {
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/vistas/especialidades/buscar.php" class="btn btn-info w-100">Volver a la busqueda</a>
+                <a href="/hospital_final_jimenez/vistas/especialidades/buscar.php" class="btn btn-info w-100">Regresar a la busqueda</a>
             </div>
         </div>
     </div>
