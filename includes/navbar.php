@@ -9,22 +9,8 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">INICIO</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Citas
-                    </a>
-                    <ul class="dropdown-menu bg-warning">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/index.php">Ingresar Citas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/buscar.php">Buscar Citas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/detalle.php">Imprimir Citas</a>
-                        </li>
-                    </ul>
-                </li>
+
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Pacientes
@@ -38,19 +24,21 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Medicos
+                        Especialidades
                     </a>
                     <ul class="dropdown-menu bg-dark">
                         <li class="nav-item">
-                            <a class="nav-link" href="/hospital_final_jimenez/vistas/medicos/index.php">Ingresar Medico</a>
+                            <a class="nav-link" href="/hospital_final_jimenez/vistas/especialidades/index.php">Ingresar especialidad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/hospital_final_jimenez/vistas/medicos/buscar.php">Buscar Medico</a>
+                            <a class="nav-link" href="/hospital_final_jimenez/vistas/especialidades/buscar.php">Buscar especialidad</a>
                         </li>
                     </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Clinicas
@@ -64,16 +52,35 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Especialidades
+                        Medicos
                     </a>
                     <ul class="dropdown-menu bg-dark">
                         <li class="nav-item">
-                            <a class="nav-link" href="/hospital_final_jimenez/vistas/especialidades/index.php">Ingresar especialidad</a>
+                            <a class="nav-link" href="/hospital_final_jimenez/vistas/medicos/index.php">Ingresar Medico</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/hospital_final_jimenez/vistas/especialidades/buscar.php">Buscar especialidad</a>
+                            <a class="nav-link" href="/hospital_final_jimenez/vistas/medicos/buscar.php">Buscar Medico</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Citas
+                    </a>
+                    <ul class="dropdown-menu bg-warning">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/index.php">Ingresar Citas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/buscar.php">Buscar Citas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/hospital_final_jimenez/vistas/citas/detalle.php">Imprimir Citas</a>
                         </li>
                     </ul>
                 </li>
