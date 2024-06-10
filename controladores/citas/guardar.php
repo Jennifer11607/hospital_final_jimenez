@@ -31,7 +31,7 @@ $_POST['cita_fecha']= date('d/m/Y', strtotime($_POST['cita_fecha']));
 
 ?>
 
-    <div class="container mt-5 text-center bg-success ml-5">
+    <div class="container mt-5 text-center ml-5">
         <div class="row">
             <div class="col-lg-6">
                 <?php if($resultado): ?>

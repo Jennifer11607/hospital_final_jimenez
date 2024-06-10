@@ -37,10 +37,11 @@ try {
 ?>
 
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row justify-content-center">
+            <h1 class="text-center" style="font-family:'Courier New', Courier, monospace">TABLA DE CITAS</h1>
             <div class="col-lg-8">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered table-hover" style="font-family:'Courier New', Courier, monospace">
                     <thead class="table-dark">
                         <tr>
                             <th>NO.</th>
@@ -83,8 +84,8 @@ try {
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/vistas/citas/buscar.php" class="btn btn-info w-100">Regresar a la búsqueda</a>
+            <div class="col-lg-4 text-center" >
+                <a href="/hospital_final_jimenez/vistas/citas/buscar.php" class="btn btn-info w-50 mb-5">Volver a la búsqueda</a>
             </div>
         </div>
     </div>
