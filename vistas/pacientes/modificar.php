@@ -2,10 +2,16 @@
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);?>
-
+<?php include_once '../../includes/header.php'?>
+<?php include_once '../../includes/navbar.php'?>
 
 <?php
+
+
 require '../../modelos/Paciente.php';
+
+
+
 try {
     if(isset($_GET['paciente_id']) && $_GET['paciente_id'] != ''){
 
@@ -22,10 +28,12 @@ try {
 
 
 <?php include_once '../../includes/header.php'?>
-    <div class="container">
-        <h1 class="text-center">MODIFICAR PACIENTES</h1>
+
+
+    <div class="container mt-5">
+        <h1 class="text-center" style="font-family:'Courier New', Courier, monospace; ">MODIFICAR PACIENTES</h1>
         <div class="row justify-content-center">
-            <form action="/hospital_final_jimenez/controladores/pacientes/modificar.php" method="POST" class="col-lg-8 border bg-light p-3">
+            <form action="/hospital_final_jimenez/controladores/pacientes/modificar.php" method="POST" class="col-lg-8 border  p-3" style="font-family:'Courier New', Courier, monospace; background-color: #99A3A4">
             <input type="hidden" name="paciente_id" value="<?= $pacientes[0]['PACIENTE_ID']?>">
                 <div class="row mb-3">
                     <div class="col">
@@ -47,7 +55,7 @@ try {
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <button type="submit" class="btn btn-warning w-100">Modificar</button>
+                        <button type="submit" class="btn btn-warning w-100 btn-sm">Modificar</button>
                     </div>
                 </div>
             </form>
