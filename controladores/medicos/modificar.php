@@ -22,8 +22,8 @@ if ($_POST['medico_nombre'] != '' && $_POST['medico_espec'] != '' && $_POST['med
 }
 ?>
 
-    <div class="container">
-        <div class="row">
+<div class="container full-height d-flex flex-column justify-content-center align-items-center">
+        <div class="row justify-content-center w-100">
             <div class="col-lg-6">
                 <?php if ($resultado): ?>
                     <div class="alert alert-success" role="alert">
@@ -36,8 +36,8 @@ if ($_POST['medico_nombre'] != '' && $_POST['medico_espec'] != '' && $_POST['med
                 <?php endif ?>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4">
+        <div class="row justify-content-center w-100 mt-3">
+            <div class="col-lg-4 text-center">
                 <a href="/hospital_final_jimenez/controladores/medicos/buscar.php?medico_nombre=<?= $_POST['medico_nombre'] ?>" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>

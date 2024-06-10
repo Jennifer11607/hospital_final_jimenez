@@ -19,8 +19,8 @@ require '../../modelos/Medico.php';
 
 ?>
 
-    <div class="container">
-        <div class="row">
+<div class="container full-height d-flex flex-column justify-content-center align-items-center">
+        <div class="row justify-content-center w-100">
             <div class="col-lg-6">
                 <?php if($resultado): ?>
                     <div class="alert alert-success" role="alert">
@@ -31,11 +31,10 @@ require '../../modelos/Medico.php';
                         Ocurrió un error: <?= $error ?>
                     </div>
                 <?php endif ?>
-              
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4">
+        <div class="row justify-content-center w-100">
+            <div class="col-lg-4 text-center">
                 <a href="/hospital_final_jimenez/controladores/medicos/buscar.php" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
