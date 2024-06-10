@@ -17,6 +17,7 @@ try {
 }
 ?>
 <?php include_once '../../includes/header.php'?>
+<?php include_once '../../includes/navbar.php'?>
     <div class="container">
         <h1 class="text-center">Modificar Especialidad</h1>
         <div class="row justify-content-center">

@@ -22,6 +22,7 @@ require_once '../../modelos/Medico.php';
     }
 ?>
 <?php include_once '../../includes/header.php'?>
+<?php include_once '../../includes/navbar.php'?>
     <div class="container">
         <h1 class="text-center">Modificar Cita</h1>
         <div class="row justify-content-center">

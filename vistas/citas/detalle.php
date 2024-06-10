@@ -18,6 +18,7 @@ require '../../modelos/Cita.php';
     } 
 ?>
 <?php include_once '../../includes/header.php'?>
+<?php include_once '../../includes/navbar.php'?>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 table-responsive">
@@ -81,7 +82,7 @@ require '../../modelos/Cita.php';
     </div>
 
 
-
+    <?php include_once '../../includes/footer.php'?>
 
     
     
