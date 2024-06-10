@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 
 require '../../modelos/Cita.php';
@@ -43,7 +43,7 @@ require '../../modelos/Cita.php';
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/controladores/citas/buscar.php" class="btn btn-info">Volver al formulario</a>
+                <a href="/hospital_final_jimenez/vistas/citas/buscar.php" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
     </div>

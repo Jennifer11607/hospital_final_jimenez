@@ -8,7 +8,10 @@ require '../../modelos/Cita.php';
    $fecha = date('d/m/Y');
    $buscar = new Cita();
 
-   $busqueda= $buscar->busqueda();
+   $busqueda= $buscar->mostrarInformacion();
+
+
+
 
     } catch (PDOException $e) {
         $error = $e->getMessage();
@@ -24,15 +27,12 @@ require '../../modelos/Cita.php';
                             <th colspan="6">DETALLE DE CITA</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tr>
                             <td colspan="6"><center>CITAS PARA EL DIA DE HOY (<?= $fecha?>) </center></td>
                             
                         </tr>
-                        <tr class="text-center table-dark">
-                            <td colspan="6"><?= $busqueda[0]['CLINICA_NOMBRE'] ?>(<?= $busqueda[0]['MEDICO_NOMBRE'] ?>)</td>
-                        </tr>
-                        
+
+                              
                         <tr>
                             <th>NO.</th>
                             <th>PACIENTE</th>
@@ -42,20 +42,34 @@ require '../../modelos/Cita.php';
                             <th>REFERIDO SI / NO</th>
                         </tr>
                 
-                        <?php foreach($busqueda as $key => $fila) : ?>
-                        <?php if( $fila['CITA_FECHA'] == date('Y-d-m')) { ?>
-                        <tr>
-                        
-                            <td><?= $key + 1 ?></td>
-                            <td><?= $fila['PACIENTE_NOMBRE'] ?></td>
-                            <td><?= $fila['PACIENTE_DPI'] ?></td>
-                            <td><?= $fila['PACIENTE_TELEFONO'] ?></td>
-                            <td><?= $fila['CITA_FECHA'] ?></td>
-                            <td><?= $fila['CITA_REFERENCIA'] ?></td>
-                        </tr>
-                        <?php  } ?>
 
+                    <?php if( count($busqueda) > 0) { ?>
+                        <?php foreach ($busqueda as $key => $opciones) : ?>
+
+                            <tr class="text-center table-dark">
+                            <td colspan="6"><?= $opciones['CLINICA_NOMBRE'] ?>(<?= $opciones['MEDICO_NOMBRE'] ?>)</td>
+                        </tr>
+
+
+                        <td><?= $key +1   ?></td>
+                            <td><?= $opciones['PACIENTE_NOMBRE'] ?></td>
+                            <td><?= $opciones['PACIENTE_DPI'] ?></td>
+                            <td><?= $opciones['PACIENTE_TELEFONO'] ?></td>
+                            <td><?= $opciones['CITA_HORA'] ?></td>
+                            <td><?= $opciones['CITA_REFERENCIA'] ?></td>
+                            <tr>
+                               
                         <?php endforeach ?>
+                         <tbody>
+                       
+                 
+                  
+                        
+                         
+                        </tr>
+                 
+                    <?php } ?>;
+                    
                        
                         <tr>
                             <td colspan="6"><center>SIN CITAS</center></td>
@@ -65,9 +79,9 @@ require '../../modelos/Cita.php';
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-4">
-            <center><a href="/hospital_final_jimenez/vistas/citas/index.php" class="btn btn-info">Regresar al Formulario</a></center>
-        </div>
-    </div>
-<?php include_once '../../includes/footer.php'?>
+
+
+
+
+    
+    

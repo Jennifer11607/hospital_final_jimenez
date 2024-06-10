@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 require_once 'Conexion.php';
 
 class Cita extends Conexion{
@@ -37,6 +37,7 @@ class Cita extends Conexion{
         }    
     public function guardar(){
         $sql = "INSERT INTO citas(cita_paciente, cita_medico, cita_fecha, cita_hora, cita_referencia) values('$this->cita_paciente','$this->cita_medico','$this->cita_fecha','$this->cita_hora','$this->cita_referencia')";
+
         $resultado = self::ejecutar($sql);
         return $resultado;
     }
@@ -60,14 +61,28 @@ class Cita extends Conexion{
         return $resultado;
     }
 
-    public function buscar_todo(){
-        $sql = "SELECT  * from citas
-        inner join pacientes on cita_paciente= paciente_id
-        inner join medicos on cita_medico = medico_id";
+    public function mostrarInformacion(...$columnas)
+    {
+        $cols = count($columnas) > 0 ? implode(',', $columnas) : '*';
+        $sql = "SELECT UNIQUE clinica_nombre ,cita_id, paciente_nombre, paciente_dpi, paciente_telefono, medico_nombre, cita_fecha, cita_medico, cita_hora, cita_referencia, cita_situacion FROM citas
+        INNER JOIN pacientes ON cita_paciente = paciente_id
+        INNER JOIN medicos ON cita_medico = medico_id
+        inner join clinicas on clinica_id = medico_clinica
+        where cita_situacion = 1";
+
+        if ($this->cita_medico != '') {
+            $sql .= " AND cita_medico = $this->cita_medico ";
+        }
+
+        // if ($this->cita_fecha != '') {
+        // $sql .= " AND cita_fecha = '$this->cita_fecha' ";
+        // }
 
         $resultado = self::servir($sql);
         return $resultado;
     }
+
+    
 
     public function modificar(){
         $sql = "UPDATE citas SET cita_paciente = '$this->cita_paciente', cita_medico = $this->cita_medico, cita_fecha = $this->cita_fecha, cita_hora = $this->cita_hora, cita_referencia = $this->cita_referencia where cita_id = $this->cita_id";
@@ -86,8 +101,7 @@ class Cita extends Conexion{
     public function busqueda(){
         
 
-        $sql = " SELECT * FROM citas  inner join pacientes on paciente_id = cita_paciente 
-        inner join medicos on medico_id = cita_medico inner join clinicas on clinica_id = medico_clinica ";
+        $sql = " SELECT * FROM citas inner join pacientes on paciente_id = cita_paciente inner join medicos on medico_id = cita_medico inner join clinicas on clinica_id = medico_clinica WHERE cita_situacion = 1  ";
 
 
         $resultado = self::servir($sql);
