@@ -51,7 +51,7 @@ try {
                             <th>FECHA CITA</th>
                             <th>HORA</th>
                             <th>REFERIDO</th>
-                            <th>MODIFICAR</th>
+                            <th>DETALLE</th>
                             <th>ELIMINAR</th>
                         </tr>
                     </thead>
@@ -69,7 +69,7 @@ try {
                                     <td><?= $cita['CITA_FECHA'] ?></td>
                                     <td><?= $cita['CITA_HORA'] ?></td>
                                     <td><?= $cita['CITA_REFERENCIA'] ?></td>
-                                    <td><a class="btn btn-warning w-100" href="/hospital_final_jimenez/vistas/citas/detalle.php?cita_fecha=<?= $cita['CITA_FECHA'] ?>">DETALLE</a></td>
+                                    <td><a class="btn btn-primary w-100" href="/hospital_final_jimenez/vistas/citas/detalle.php?cita_fecha=<?= $cita['CITA_FECHA'] ?>">DETALLE</a></td>
                                     <td><a class="btn btn-danger w-100" href="/hospital_final_jimenez/controladores/citas/eliminar.php?cita_id=<?= $cita['CITA_ID'] ?>">Eliminar</a></td>
                                 </tr>
                             <?php endforeach ?>

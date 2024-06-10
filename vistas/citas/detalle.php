@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 require '../../modelos/Cita.php';
     try {
    
@@ -19,12 +19,14 @@ require '../../modelos/Cita.php';
 ?>
 <?php include_once '../../includes/header.php'?>
 <?php include_once '../../includes/navbar.php'?>
+
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 table-responsive">
-                <table class="table table-bordered">
+                <table class="table table-bordered" style="font-family:'Courier New', Courier, monospace">
                     <thead>
-                        <tr class="text-center table-dark">
+                        <tr class="text-center table-primary table-bordered rounded border border-primary">
                             <th colspan="6">DETALLE DE CITA</th>
                         </tr>
                     </thead>
@@ -47,9 +49,9 @@ require '../../modelos/Cita.php';
                     <?php if( count($busqueda) > 0) { ?>
                         <?php foreach ($busqueda as $key => $opciones) : ?>
 
-                            <tr class="text-center table-dark">
+                            <tr class="text-center table-success font-weight-bold ">
                             <td colspan="6"><?= $opciones['CLINICA_NOMBRE'] ?>(<?= $opciones['MEDICO_NOMBRE'] ?>)</td>
-                        </tr>
+                            </tr>
 
 
                         <td><?= $key +1   ?></td>

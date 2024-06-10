@@ -1,7 +1,7 @@
 <?php
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 require_once 'Conexion.php';
 
 class Cita extends Conexion{
@@ -85,8 +85,9 @@ class Cita extends Conexion{
     
 
     public function modificar(){
-        $sql = "UPDATE citas SET cita_paciente = '$this->cita_paciente', cita_medico = $this->cita_medico, cita_fecha = $this->cita_fecha, cita_hora = $this->cita_hora, cita_referencia = $this->cita_referencia where cita_id = $this->cita_id";
-        
+        $sql = "UPDATE citas SET cita_paciente = '$this->cita_paciente', cita_medico = $this->cita_medico, cita_fecha = '$this->cita_fecha', cita_hora = '$this->cita_hora', cita_referencia = '$this->cita_referencia' where cita_id = $this->cita_id";
+  
+
         $resultado = self::ejecutar($sql);
         return $resultado;
     }

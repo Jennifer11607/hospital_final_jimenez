@@ -29,11 +29,12 @@ try {
 
 <?php include_once '../../includes/header.php' ?>
 <?php include_once '../../includes/navbar.php' ?>
-<div class="container">
-    <h1 class="text-center">Buscar Citas</h1>
-    <div class="row justify-content-center">
-        <form action="/hospital_final_jimenez/controladores/citas/buscar.php" method="POST" class="col-lg-8 border bg-light p-3">
 
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <form action="/hospital_final_jimenez/controladores/citas/buscar.php" method="POST" class="col-lg-8 rounded border border-success p-3 w-50" style="font-family:'Courier New', Courier, monospace; background-color: #A5D6A7 " >
+        <h1 class="text-center" style="font-family:'Courier New', Courier, monospace">Buscar Citas</h1>
             <div class="row mb-3">
                 <div class="col">
                     <label for="cita_medico">Medico</label>
@@ -53,8 +54,8 @@ try {
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col">
-                    <button type="submit" class="btn btn-info w-100">Buscar</button>
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-info w-50">Buscar</button>
                 </div>
             </div>
         </form>
