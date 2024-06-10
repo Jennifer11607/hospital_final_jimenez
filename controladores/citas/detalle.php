@@ -5,6 +5,8 @@
 
 
 
+include_once '../../includes/header.php';
+include_once '../../includes/navbar.php';
 require '../../modelos/Cita.php';
 require '../../modelos/Detalle.php';
 require '../../modelos/Medico.php';
