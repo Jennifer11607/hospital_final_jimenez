@@ -53,3 +53,4 @@ if($_POST['paciente_nombre'] != '' && $_POST['paciente_dpi'] != '' && $_POST['pa
             </div>
         </div>
     </div>
+    <?php include_once '../../includes/footer.php'?>
