@@ -102,19 +102,19 @@ include_once '../../includes/navbar.php';
 /* css footer */
 /* Estilos para el footer */
 .footer {
-    background-color: #616A6B; /* Color de fondo del footer */
+    background-color: #2471A3; /* Color de fondo del footer */
 }
 
 /* Estilos para los títulos de las secciones */
 .footer h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente */
+    font-family:'Courier New', Courier, monospace; /* Fuente */
     font-weight: bold; /* Peso de la fuente */
     letter-spacing: 1px; /* Espaciado entre letras */
 }
 
 /* Estilos para los párrafos del footer */
 .footer p {
-    font-family: Arial, sans-serif; /* Fuente */
+    font-family:'Courier New', Courier, monospace; /* Fuente */
     font-size: 14px; /* Tamaño de fuente */
 }
 

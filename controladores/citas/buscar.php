@@ -18,16 +18,6 @@ try {
 
 
 
-//     $cita3 = new Cita();
-// $cit=$cita3->buscar_todo();
-// // var_dump($cit);
-
-//     $paciente = new Paciente();
-//     $pacientes = $paciente->buscar();
-//     // var_dump($pacientes);
-//     $medico = new Medico();
-//     $medicos = $medico->buscar();
-
 } catch (PDOException $e) {
     $error = $e->getMessage();
 } catch (Exception $e2) {
