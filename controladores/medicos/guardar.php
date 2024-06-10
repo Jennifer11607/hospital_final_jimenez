@@ -25,7 +25,7 @@ if($_POST['medico_nombre'] != '' && $_POST['medico_espec'] != '' && $_POST['medi
 
 ?>
 
-<div class="container full-height d-flex flex-column justify-content-center align-items-center">
+<div class="container full-height d-flex flex-column justify-content-center align-items-center mt-5">
         <div class="row justify-content-center w-100">
             <div class="col-lg-6">
                 <?php if($resultado): ?>
