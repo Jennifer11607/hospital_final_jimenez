@@ -13,6 +13,7 @@
 
 <style>
 
+
 /* Asegúrate de que los dropdowns estén alineados a la derecha */
 .navbar-nav {
     margin-left: auto;

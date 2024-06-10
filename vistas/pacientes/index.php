@@ -7,7 +7,7 @@
 <?php include_once '../../includes/header.php'?>
 <?php include_once '../../includes/navbar.php'?>
 
-<div class="container mt-5" style="max-width: 700px; background-color: #2471A3; border: solid 2px; border-color: #fff;">
+<div class="container mt-5" style="max-width: 700px; background-color: #2471A3; border: solid 2px; border-color: #fff;" >
         <h1 class="text-center mb-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> FORMULARIO INGRESAR PACIENTES</h1>
         <div class="row justify-content-center">
             <form action="/hospital_final_jimenez/controladores/pacientes/guardar.php" method="POST" class="col-lg-6 border p-4 rounded mb-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color:#AAB7B8;">
