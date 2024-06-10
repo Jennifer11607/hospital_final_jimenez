@@ -20,8 +20,9 @@ try {
 
     <div class="container">
         <div class="row justify-content-center">
+            <h1 class="text-center mt-5"style="font-family:'Courier New', Courier, monospace">TABLAS DE CLINICAS</h1>
             <div class="col-lg-8">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered table-hover" style="font-family:'Courier New', Courier, monospace">
                     <thead class="table-dark">
                         <tr>
                             <th>NO. </th>
@@ -51,7 +52,7 @@ try {
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/vistas/clinicas/buscar.php" class="btn btn-info w-100">Regresar a la búsqueda</a>
+                <a href="/hospital_final_jimenez/vistas/clinicas/buscar.php" class="btn btn-info w-100 mb-4" style="font-family:'Courier New', Courier, monospace">Regresar a la búsqueda</a>
             </div>
         </div>
     </div>

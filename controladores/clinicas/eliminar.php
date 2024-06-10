@@ -22,11 +22,11 @@ require '../../modelos/Clinica.php';
 
 ?>
 
-    <div class="container">
-        <div class="row">
+<div class="container mt-5">
+        <div class="row justify-content-center">
             <div class="col-lg-6">
                 <?php if($resultado): ?>
-                    <div class="alert alert-success" role="alert">
+                    <div class="alert alert-success text-center" role="alert">
                         Eliminado exitosamente!
                     </div>
                 <?php else :?>
@@ -34,14 +34,14 @@ require '../../modelos/Clinica.php';
                         Ocurrió un error: <?= $error ?>
                     </div>
                 <?php endif ?>
-              
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/controladores/clinicas/buscar.php" class="btn btn-info">Volver al formulario</a>
+                <a href="/hospital_final_jimenez/controladores/clinicas/buscar.php" class="btn btn-info btn-block">Volver al formulario</a>
             </div>
         </div>
     </div>
+
 
     <?php include_once '../../includes/footer.php'?>
