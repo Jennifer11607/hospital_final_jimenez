@@ -18,40 +18,44 @@ try {
 
 ?>
 
-    <div class="container">
+<div class="container mt-5">
+        <div class="row justify-content-center mb-4">
+            <h1 class="text-center" style="font-family:'Courier New', Courier, monospace">TABLA DE ESPECIALIDADES</h1>
+        </div>
         <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <table class="table table-bordered table-hover">
+            <div class="col-lg-8 table-container">
+                <table class="table table-bordered table-hover" style="font-family:'Courier New', Courier, monospace">
                     <thead class="table-dark">
                         <tr>
-                            <th>NO. </th>
+                            <th>NO.</th>
                             <th>ESPECIALIDAD</th>
                             <th>ELIMINAR</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if(count($especialidades) > 0):?>
+                        <?php if(count($especialidades) > 0): ?>
                         <?php foreach($especialidades as $key => $especialidad) : ?>
                         <tr>
                             <td><?= $key + 1 ?></td>
                             <td><?= $especialidad['ESPEC_NOMBRE'] ?></td>
-                            <td><a class="btn btn-danger w-100" href="/hospital_final_jimenez/controladores/especialidades/eliminar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Eliminar</a></td>
+                            <td><a class="btn btn-danger btn-sm w-100" style="font-family:'Courier New', Courier, monospace" href="/hospital_final_jimenez/controladores/especialidades/eliminar.php?espec_id=<?= $especialidad['ESPEC_ID']?>">Eliminar</a></td>
                         </tr>
                         <?php endforeach ?>
-                        <?php else :?>
+                        <?php else : ?>
                             <tr>
-                                <td colspan="3">NO EXISTEN REGISTROS</td>
+                                <td colspan="3" class="text-center">NO EXISTEN REGISTROS</td>
                             </tr>
-                        <?php endif?>
+                        <?php endif ?>
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/vistas/especialidades/buscar.php" class="btn btn-info w-100">Regresar a la busqueda</a>
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-4 text-center">
+                <a href="/hospital_final_jimenez/vistas/especialidades/buscar.php" class="btn btn-info btn-sm w-100 mb-4" style="font-family:'Courier New', Courier, monospace">Regresar a la búsqueda</a>
             </div>
         </div>
     </div>
+
 
     <?php include_once '../../includes/footer.php'?>

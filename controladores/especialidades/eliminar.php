@@ -18,8 +18,8 @@ require '../../modelos/Especialidades.php';
 
 ?>
 
-    <div class="container">
-        <div class="row">
+<div class="container mt-5">
+        <div class="row justify-content-center">
             <div class="col-lg-6">
                 <?php if($resultado): ?>
                     <div class="alert alert-success" role="alert">
@@ -30,13 +30,13 @@ require '../../modelos/Especialidades.php';
                         Ocurrió un error: <?= $error ?>
                     </div>
                 <?php endif ?>
-              
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/controladores/especialidades/buscar.php" class="btn btn-info">Volver al formulario</a>
+                <a href="/hospital_final_jimenez/controladores/especialidades/buscar.php" class="btn btn-info btn-block">Volver al formulario</a>
             </div>
         </div>
     </div>
+
     <?php include_once '../../includes/footer.php'?>

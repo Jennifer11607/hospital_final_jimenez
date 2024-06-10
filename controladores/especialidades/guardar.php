@@ -28,8 +28,8 @@ if($_POST['espec_nombre'] != ''){
 
 ?>
 
-    <div class="container">
-        <div class="row">
+<div class="container mt-5">
+        <div class="row justify-content-center">
             <div class="col-lg-6">
                 <?php if($resultado): ?>
                     <div class="alert alert-success" role="alert">
@@ -42,10 +42,11 @@ if($_POST['espec_nombre'] != ''){
                 <?php endif ?>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/hospital_final_jimenez/vistas/especialidades/index.php" class="btn btn-info">Regresar al formulario</a>
+                <a href="/hospital_final_jimenez/vistas/especialidades/index.php" class="btn btn-info btn-block">Regresar al formulario</a>
             </div>
         </div>
     </div>
+
     <?php include_once '../../includes/footer.php'?>
